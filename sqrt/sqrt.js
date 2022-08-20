@@ -24,7 +24,6 @@ let x1 = 8;
 var mySqrt = function (x) {
     let left = 1;
     let right = x;
-    let mid;
 
     if (x < 2) return x;
 
