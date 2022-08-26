@@ -28,17 +28,25 @@ var mySqrt = function (x) {
     if (x < 2) return x;
 
     while (left < right) {
+        // find the center
         mid = Math.floor((right + left) / 2);
 
+        // if the center is squared to our input we return it
         if (mid ** 2 === x) {
             return mid;
+
+            // we set our new search using binary
         } else if (mid ** 2 > x) {
             right = mid;
+            
+            // we set our new search using binary
         } else if (mid ** 2 < x) {
             left = mid + 1;
         }
     }
 
+
+    // we subtract 1 to left because left squared is greater than our input
     return left - 1
 };
 
