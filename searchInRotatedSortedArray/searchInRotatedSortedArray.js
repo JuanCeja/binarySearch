@@ -34,7 +34,13 @@ let nums3 = [1];
 let target3 = 0;
 
 var search = function(nums, target) {
-    
+    let left = 0;
+    let right = nums.length - 1;
+
+    while(left <= right) {
+        mid = Math.floor((left + right) / 2);
+
+    }
 };
 
 console.log(search(nums1, target1));
